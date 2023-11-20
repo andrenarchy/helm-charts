@@ -1,0 +1,66 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: rhasspy/wyoming-whisper
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# options: tiny-int8|tiny|base|base-int8|small-int8|small|medium-int8
+args: 
+ - '--model'
+ - 'tiny-int8'
+ - '--language'
+ - 'en'
+
+# -- environment variables.
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC
+
+# -- Configures service settings for the chart. Normally this does not need to be modified.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        enabled: false
+      wyoming:
+        enabled: true
+        port: 10300
+        protocol: TCP
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Enable devices to be discoverable
+# hostNetwork: true
+
+# -- When hostNetwork is true set dnsPolicy to ClusterFirstWithHostNet
+# dnsPolicy: ClusterFirstWithHostNet
+
+securityContext:
+  # -- (bool) Privileged securityContext may be required if USB devics are accessed directly through the host machine
+  privileged:  # true
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  data:
+    enabled: false
+    type: pvc
+    accessMode: ReadWriteOnce
+    size: 4Gi
+

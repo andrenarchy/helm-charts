@@ -1,0 +1,20 @@
+---
+apiVersion: v2
+appVersion: 1.0.0
+description: Whisper (faster-whisper)
+name: whisper
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - whisper
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+sources:
+  - https://hub.docker.com/r/rhasspy/wyoming-whisper
+maintainers:
+  - name: André Gaul
+    email: andre@gaul.io
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
