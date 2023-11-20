@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "231021"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 8.0.0
+version: 8.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - photos
@@ -16,8 +16,8 @@ sources:
   - https://github.com/photoprism/photoprism
   - https://hub.docker.com/r/photoprism/photoprism
 maintainers:
-  - name: billimek
-    email: jeff@billimek.com
+  - name: André Gaul
+    email: andre@gaul.io
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
