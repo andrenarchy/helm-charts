@@ -36,7 +36,7 @@ dependencies:
     condition: influxdb.enabled
   - name: whisper
     version: 1.0.0
-    repository: file://../whisper
+    repository: https://andrenarchy.github.io/helm-charts/
     condition: whisper.enabled
 annotations:
   artifacthub.io/changes: |-
