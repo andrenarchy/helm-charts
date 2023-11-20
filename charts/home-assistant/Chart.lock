@@ -11,8 +11,5 @@ dependencies:
 - name: influxdb
   repository: https://charts.bitnami.com/bitnami
   version: 5.3.5
-- name: whisper
-  repository: https://andrenarchy.github.io/helm-charts/
-  version: 1.0.0
-digest: sha256:5e793bea0c2668283c748222ca890c62bedaf600d61393b0a71f4b525636f712
-generated: "2023-09-24T12:05:59.699904+02:00"
+digest: sha256:e122c8b0defe7942e6b5c797bff0347a17da5a264f0733b3f6987251fca7613f
+generated: "2023-11-20T23:43:43.914829+01:00"
