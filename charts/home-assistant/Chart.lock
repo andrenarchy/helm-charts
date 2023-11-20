@@ -1,0 +1,18 @@
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.6.12
+- name: mariadb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.0.14
+- name: influxdb
+  repository: https://charts.bitnami.com/bitnami
+  version: 5.3.5
+- name: whisper
+  repository: file://../whisper
+  version: 1.0.0
+digest: sha256:5e793bea0c2668283c748222ca890c62bedaf600d61393b0a71f4b525636f712
+generated: "2023-09-24T12:05:59.699904+02:00"
