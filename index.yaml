@@ -1,5 +1,86 @@
 apiVersion: v1
 entries:
+  home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 2023.11.2
+    created: "2023-11-20T22:44:46.748737187Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    description: Home Assistant
+    digest: 488a211802feca85f4d1cd261f48ad29e0a56e8ed11985305a09cc6f95301758
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    - https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.0.0/home-assistant-14.0.0.tgz
+    version: 14.0.0
+  photoprism:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: "231021"
+    created: "2023-11-20T22:44:46.891060887Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 65ed1cc5daa8c886aa0e23050a1a45ef773d5c7da8f549924bebf84d06236be0
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.0.1/photoprism-8.0.1.tgz
+    version: 8.0.1
   vaultwarden:
   - annotations:
       artifacthub.io/changes: |-
@@ -73,4 +154,27 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/vaultwarden-6.0.0/vaultwarden-6.0.0.tgz
     version: 6.0.0
-generated: "2023-11-20T22:12:38.190885793Z"
+  whisper:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-11-20T22:44:47.030962191Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Whisper (faster-whisper)
+    digest: cf56881c3e225579d7de7f52d7072aa6b4cfb3e3688a41764168a373abeb5c99
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/whisper
+    keywords:
+    - whisper
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: whisper
+    sources:
+    - https://hub.docker.com/r/rhasspy/wyoming-whisper
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/whisper-1.0.0/whisper-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-11-20T22:44:47.030973072Z"
