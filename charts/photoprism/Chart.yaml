@@ -1,17 +1,17 @@
 ---
 apiVersion: v2
-appVersion: "231021"
+appVersion: "231128"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 8.0.1
+version: 8.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - photos
   - photoprism
   - pictures
   - sharing
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/photoprism
-icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+home: https://github.com/andrenarchy/helm-charts/tree/main/charts/photoprism
+icon: https://demo-cdn.photoprism.app/static/icons/logo.svg
 sources:
   - https://github.com/photoprism/photoprism
   - https://hub.docker.com/r/photoprism/photoprism
@@ -26,7 +26,3 @@ dependencies:
     version: 11.0.14
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
-annotations:
-  artifacthub.io/changes: |-
-    - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
