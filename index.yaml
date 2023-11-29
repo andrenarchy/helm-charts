@@ -7,6 +7,52 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2023.11.3
+    created: "2023-11-29T20:38:57.237632537Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: 7863a5ccacad4dd9653cca1a25bb53af0eae78c918ad803c0a655de9cde3f39a
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.2.1/home-assistant-14.2.1.tgz
+    version: 14.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 2023.11.3
     created: "2023-11-25T14:41:45.581956681Z"
     dependencies:
     - name: common
@@ -139,6 +185,38 @@ entries:
     - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.0.0/home-assistant-14.0.0.tgz
     version: 14.0.0
   photoprism:
+  - apiVersion: v2
+    appVersion: "231128"
+    created: "2023-11-29T20:38:57.403550064Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 55d6a3671a02c3f47a6843f08c83f10bf037a260f9978502e8d66d92b24250ed
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/photoprism
+    icon: https://demo-cdn.photoprism.app/static/icons/logo.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.1.0/photoprism-8.1.0.tgz
+    version: 8.1.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -176,6 +254,39 @@ entries:
     - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.0.1/photoprism-8.0.1.tgz
     version: 8.0.1
   vaultwarden:
+  - apiVersion: v2
+    appVersion: 1.30.1
+    created: "2023-11-29T20:38:57.54289545Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 5e874162a0ea157213cf9a9598322a09ef48792ee2654452f2932606445b8de2
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/vaultwarden
+    icon: https://lab.uberspace.de/_images/vaultwarden.png
+    keywords:
+    - Vaultwarden
+    - Bitwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/vaultwarden-6.0.2/vaultwarden-6.0.2.tgz
+    version: 6.0.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -271,4 +382,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/whisper-1.0.0/whisper-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-25T14:41:45.581975396Z"
+generated: "2023-11-29T20:38:57.542914014Z"
