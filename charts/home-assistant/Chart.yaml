@@ -3,18 +3,17 @@ apiVersion: v2
 appVersion: 2023.11.3
 description: Home Assistant
 name: home-assistant
-version: 14.2.0
+version: 14.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
   - hass
   - homeassistant
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
-icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
 sources:
   - https://github.com/home-assistant/home-assistant
   - https://github.com/cdr/code-server
-  - https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
 maintainers:
   - name: André Gaul
     email: andre@gaul.io
