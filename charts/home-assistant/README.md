@@ -24,7 +24,7 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add andrenarchy https://k8s-at-home.com/charts/
+helm repo add andrenarchy https://andrenarchy.github.io/helm-charts/
 helm repo update
 helm install home-assistant andrenarchy/home-assistant
 ```
