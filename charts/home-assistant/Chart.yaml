@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 2024.2.1
+appVersion: 2024.2.2
 description: Home Assistant
 name: home-assistant
-version: 14.14.0
+version: 14.15.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
