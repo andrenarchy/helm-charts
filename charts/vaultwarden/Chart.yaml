@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 1.30.3
+appVersion: 1.30.4
 description: Vaultwarden is a Bitwarden compatable server in Rust
 name: vaultwarden
-version: 6.3.0
+version: 6.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - Vaultwarden
