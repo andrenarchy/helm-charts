@@ -1,0 +1,22 @@
+---
+apiVersion: v2
+appVersion: 1.17.1
+description: Read the wired or wireless mbus protocol to acquire utility meter readings.
+name: wmbusmeters
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - m-bus
+  - wm-bus
+  - mqtt
+  - home-assistant
+home: https://github.com/andrenarchy/helm-charts/tree/main/charts/wmbusmeters
+sources:
+  - https://github.com/wmbusmeters/wmbusmeters
+maintainers:
+  - name: André Gaul
+    email: andre@gaul.io
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
