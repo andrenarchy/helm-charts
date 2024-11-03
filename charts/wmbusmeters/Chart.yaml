@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.17.1
 description: Read the wired or wireless mbus protocol to acquire utility meter readings.
 name: wmbusmeters
-version: 1.0.0
+version: 1.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - m-bus

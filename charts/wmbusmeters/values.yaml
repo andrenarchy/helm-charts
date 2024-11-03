@@ -9,9 +9,7 @@ image:
   # -- image repository
   repository: wmbusmeters/wmbusmeters
   # -- image tag
-  # note: 1.17.1 does not support iu891a yet! latest does...
-  # tag: release-1.17.1
-  tag: latest
+  tag: release-1.17.1
   # -- image pull policy
   pullPolicy: IfNotPresent
 
