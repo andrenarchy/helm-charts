@@ -2837,6 +2837,33 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/whisper-1.0.0/whisper-1.0.0.tgz
     version: 1.0.0
+  wmbusmeters:
+  - apiVersion: v2
+    appVersion: 1.17.1
+    created: "2024-11-03T20:06:56.979653934Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Read the wired or wireless mbus protocol to acquire utility meter
+      readings.
+    digest: a37dfeb5710c591be2850cb95fc3556efbd84f167ae53d52c18b55bd764235c3
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/wmbusmeters
+    keywords:
+    - m-bus
+    - wm-bus
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: wmbusmeters
+    sources:
+    - https://github.com/wmbusmeters/wmbusmeters
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/wmbusmeters-1.0.0/wmbusmeters-1.0.0.tgz
+    version: 1.0.0
   zigbee2mqtt:
   - apiVersion: v2
     appVersion: 1.40.2
@@ -3254,4 +3281,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2024-10-28T05:54:29.256451762Z"
+generated: "2024-11-03T20:06:56.979797291Z"
