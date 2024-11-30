@@ -3043,6 +3043,32 @@ entries:
     version: 1.0.0
   wmbusmeters:
   - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2024-11-30T12:41:55.672075256Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Read the wired or wireless mbus protocol to acquire utility meter
+      readings.
+    digest: fc0234fdb1ef9fcaad1bc28575e3f6e3bc3a8b273a9fac5b71c662e42e25c7a8
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/wmbusmeters
+    keywords:
+    - m-bus
+    - wm-bus
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: wmbusmeters
+    sources:
+    - https://github.com/wmbusmeters/wmbusmeters
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/wmbusmeters-1.1.1/wmbusmeters-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     appVersion: 1.17.1
     created: "2024-11-03T20:13:52.52856534Z"
     dependencies:
@@ -3537,4 +3563,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2024-11-23T06:27:04.999866254Z"
+generated: "2024-11-30T12:41:55.67230335Z"
