@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: wmbusmeters/wmbusmeters
   # -- image tag
-  tag: release-1.17.1
+  tag: release-1.18.0
   # -- image pull policy
   pullPolicy: IfNotPresent
 
