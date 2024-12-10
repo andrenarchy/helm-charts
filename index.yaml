@@ -2623,6 +2623,39 @@ entries:
     version: 8.0.1
   vaultwarden:
   - apiVersion: v2
+    appVersion: 1.32.6
+    created: "2024-12-10T21:36:17.371306855Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 43158c6e664551a841bbb79103751870248f48deb61fc90f5cb9c07c8ea5ace8
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/vaultwarden
+    icon: https://lab.uberspace.de/_images/vaultwarden.png
+    keywords:
+    - Vaultwarden
+    - Bitwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/vaultwarden-6.13.0/vaultwarden-6.13.0.tgz
+    version: 6.13.0
+  - apiVersion: v2
     appVersion: 1.32.5
     created: "2024-11-18T12:57:03.792717855Z"
     dependencies:
@@ -3727,4 +3760,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2024-12-10T21:06:53.2318646Z"
+generated: "2024-12-10T21:36:17.37152743Z"
