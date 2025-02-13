@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: koenkk/zigbee2mqtt
   # -- image tag
-  # tag: 1.19.1
+  # tag: 2.0.0
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -70,7 +70,8 @@ affinity: {}
 config:
   # These will be applied ONLY on first run
   # Home Assistant integration (MQTT discovery)
-  homeassistant: false
+  homeassistant: 
+    enabled: true
 
   # allow new devices to join
   # WARNING: Disable this after all devices have been paired! (default: false)
@@ -95,6 +96,7 @@ config:
 
   # USB / Serial settings
   serial:
+    stack: vstack
     # Location of your zigbee device
     # port: /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2400981-if00
 
@@ -120,9 +122,6 @@ config:
     # Optional: Add a last_seen attribute to MQTT messages, contains date/time of last Zigbee message
     # possible values are: disable (default), ISO_8601, ISO_8601_local, epoch (default: disable)
     last_seen: 'ISO_8601'
-
-    homeassistant_discovery_topic: 'homeassistant'
-    homeassistant_status_topic: 'homeassistant/status'
 
     # Optional: Enables report feature (see information -> report for more details) (default: false)
     # report: true
