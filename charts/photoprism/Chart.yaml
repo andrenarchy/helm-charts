@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: "250224"
+appVersion: "250228"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 8.6.0
+version: 8.7.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - photos
