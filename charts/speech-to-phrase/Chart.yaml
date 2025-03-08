@@ -1,0 +1,21 @@
+---
+apiVersion: v2
+appVersion: 1.3.0
+description: Rhasspy's wyoming speech-to-phrase
+name: speech-to-phrase
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - speech-to-phrase
+  - wyoming
+  - rhasspy
+home: https://github.com/andrenarchy/helm-charts/tree/main/charts/speech-to-phrase
+sources:
+  - https://hub.docker.com/r/rhasspy/wyoming-speech-to-phrase
+maintainers:
+  - name: André Gaul
+    email: andre@gaul.io
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
