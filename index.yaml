@@ -4353,6 +4353,32 @@ entries:
     version: 1.0.0
   zigbee2mqtt:
   - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2025-05-02T19:52:56.656236778Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 155dca8a44a513a201574319746364760f0c10080563f87962e205f87bce5c48
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.28.0/zigbee2mqtt-9.28.0.tgz
+    version: 9.28.0
+  - apiVersion: v2
     appVersion: 2.2.1
     created: "2025-04-05T19:58:08.582431723Z"
     dependencies:
@@ -4976,4 +5002,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2025-04-27T20:25:12.738895065Z"
+generated: "2025-05-02T19:52:56.656777682Z"
