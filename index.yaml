@@ -6,6 +6,52 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 2025.5.1
+    created: "2025-05-09T21:13:11.922517975Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: 411cb41d288ee3039bf83ceab7ce2d09816f261a91722011c77b584633216a19
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.68.0/home-assistant-14.68.0.tgz
+    version: 14.68.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 2025.4.4
     created: "2025-04-27T20:25:12.626815727Z"
     dependencies:
@@ -5002,4 +5048,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2025-05-02T19:52:56.656777682Z"
+generated: "2025-05-09T21:13:11.922783732Z"
