@@ -1,0 +1,26 @@
+---
+apiVersion: v2
+appVersion: 0.2.5
+description: An intuitive spreadsheet-like interface that lets users of all technical skill levels view, edit, query, and collaborate on Postgres data directly
+name: mathesar
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - Mathesar
+  - Postgres
+  - Postgresql
+home: https://github.com/andrenarchy/helm-charts/tree/main/charts/mathesar
+icon: https://avatars.githubusercontent.com/u/64070190
+sources:
+  - https://github.com/mathesar-foundation/mathesar
+maintainers:
+  - name: André Gaul
+    email: andre@gaul.io
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+  - name: postgresql
+    version: 16.7.11
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled

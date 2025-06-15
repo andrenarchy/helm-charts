@@ -1,0 +1,71 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: mathesar/mathesar
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+
+strategy:
+  type: Recreate
+
+# -- environment variables. See [image docs](https://raw.githubusercontent.com/mathesar-foundation/mathesar/0.2.5/docker-compose.yml) for more details.
+# @default -- See below
+env:
+  POSTGRES_DB:
+  POSTGRES_USER:
+  POSTGRES_PASSWORD:
+  POSTGRES_HOST:
+  POSTGRES_PORT: 5432
+  DJANGO_SETTINGS_MODULE: config.settings.production
+  ALLOWED_HOSTS: '*'
+  # SECURITY WARNING: don't run with DEBUG=true in production!
+  DEBUG: 'false'
+
+# -- Configures service settings for the chart. Normally this does not need to be modified.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+    hosts:
+      - host: chart-example.local
+        paths:
+          - path: /
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  media:
+    enabled: false
+    type: pvc
+    accessMode: ReadWriteOnce
+    size: 4Gi
+    mountPath: /code/media
+
+# https://github.com/bitnami/charts/tree/master/bitnami/postgresql/#installing-the-chart
+postgresql:
+  enabled: false
+  # postgresqlUsername: ""
+  # postgresqlPassword: ""
+  # postgresqlDatabase: ""
+  # persistence:
+  #   enabled: true
+  #   storageClass:
+  #   accessModes:
+  #     - ReadWriteOnce
