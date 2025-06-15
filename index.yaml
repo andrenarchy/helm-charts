@@ -3358,6 +3358,37 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.0.0/home-assistant-14.0.0.tgz
     version: 14.0.0
+  mathesar:
+  - apiVersion: v2
+    appVersion: 0.2.5
+    created: "2025-06-15T21:07:48.985869759Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.7.11
+    description: An intuitive spreadsheet-like interface that lets users of all technical
+      skill levels view, edit, query, and collaborate on Postgres data directly
+    digest: 2fa26f28500ad588afdd204b214dcad45e65dcf0691ed07a22bdaabb7f889795
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/mathesar
+    icon: https://avatars.githubusercontent.com/u/64070190
+    keywords:
+    - Mathesar
+    - Postgres
+    - Postgresql
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: mathesar
+    sources:
+    - https://github.com/mathesar-foundation/mathesar
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/mathesar-1.0.0/mathesar-1.0.0.tgz
+    version: 1.0.0
   photoprism:
   - apiVersion: v2
     appVersion: "250426"
@@ -5245,4 +5276,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2025-06-14T20:12:22.434290057Z"
+generated: "2025-06-15T21:07:48.986034016Z"
