@@ -6,6 +6,52 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 2025.10.0
+    created: "2025-10-03T18:07:38.945144098Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: d9e50ae87e139be45433ff06ccff8f3cbf98de76d1415ec0f0c8bdef04ff5eb4
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.78.0/home-assistant-14.78.0.tgz
+    version: 14.78.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 2025.9.3
     created: "2025-09-13T18:53:04.55153053Z"
     dependencies:
@@ -5026,6 +5072,32 @@ entries:
     version: 1.0.0
   zigbee2mqtt:
   - apiVersion: v2
+    appVersion: 2.6.2
+    created: "2025-10-03T18:07:39.059086889Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 143b478101b0827a791c8a278a86bea707de21646e818e7c81c7392d06bcdbf1
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.33.0/zigbee2mqtt-9.33.0.tgz
+    version: 9.33.0
+  - apiVersion: v2
     appVersion: 2.6.1
     created: "2025-09-13T18:53:04.824909281Z"
     dependencies:
@@ -5779,4 +5851,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2025-09-13T18:53:04.825349038Z"
+generated: "2025-10-03T18:07:39.059519237Z"
