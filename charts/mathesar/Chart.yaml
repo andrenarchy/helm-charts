@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 0.6.0
+appVersion: 0.7.1
 description: An intuitive spreadsheet-like interface that lets users of all technical skill levels view, edit, query, and collaborate on Postgres data directly
 name: mathesar
-version: 1.3.0
+version: 1.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - Mathesar
