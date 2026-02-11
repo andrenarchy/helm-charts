@@ -4234,6 +4234,36 @@ entries:
     version: 14.0.0
   mathesar:
   - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2026-02-11T20:50:25.104391934Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.7.11
+    description: An intuitive spreadsheet-like interface that lets users of all technical
+      skill levels view, edit, query, and collaborate on Postgres data directly
+    digest: e526f5dd16922be3d69522db906b0458c44360e0542ab3c4a6dedf11940b142d
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/mathesar
+    icon: https://avatars.githubusercontent.com/u/64070190
+    keywords:
+    - Mathesar
+    - Postgres
+    - Postgresql
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: mathesar
+    sources:
+    - https://github.com/mathesar-foundation/mathesar
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/mathesar-1.6.0/mathesar-1.6.0.tgz
+    version: 1.6.0
+  - apiVersion: v2
     appVersion: 0.8.0
     created: "2025-12-24T01:13:58.568309725Z"
     dependencies:
@@ -6695,4 +6725,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2026-02-07T22:51:38.852722291Z"
+generated: "2026-02-11T20:50:25.104816196Z"
