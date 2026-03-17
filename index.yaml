@@ -6,6 +6,52 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 2026.3.2
+    created: "2026-03-17T08:45:43.838499134Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: 05fceccade252d93431eaffb0ad3bb28dd9f671397f2a8ef97122f2965486f09
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.93.0/home-assistant-14.93.0.tgz
+    version: 14.93.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 2026.3.0
     created: "2026-03-05T08:46:07.896752033Z"
     dependencies:
@@ -4537,6 +4583,38 @@ entries:
     version: 1.0.0
   photoprism:
   - apiVersion: v2
+    appVersion: "260305"
+    created: "2026-03-17T08:45:44.07485321Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 02a7baa76aa1232b52eb2de2b1b47de594826f8ba5bf93245a3ea7f28b10e2cc
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/photoprism
+    icon: https://demo-cdn.photoprism.app/static/icons/logo.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.12.0/photoprism-8.12.0.tgz
+    version: 8.12.0
+  - apiVersion: v2
     appVersion: "251130"
     created: "2025-12-01T19:49:40.894158893Z"
     dependencies:
@@ -4957,6 +5035,30 @@ entries:
     - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.0.1/photoprism-8.0.1.tgz
     version: 8.0.1
   speech-to-phrase:
+  - apiVersion: v2
+    appVersion: 1.4.2
+    created: "2026-03-17T08:45:44.532965602Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Rhasspy's wyoming speech-to-phrase
+    digest: 3fc5534339e0740b4ca63eeec326100e39548fde8ab1ca906bfaa7a7014f2b02
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/speech-to-phrase
+    keywords:
+    - speech-to-phrase
+    - wyoming
+    - rhasspy
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: speech-to-phrase
+    sources:
+    - https://hub.docker.com/r/rhasspy/wyoming-speech-to-phrase
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/speech-to-phrase-1.2.0/speech-to-phrase-1.2.0.tgz
+    version: 1.2.0
   - apiVersion: v2
     appVersion: 1.4.1
     created: "2025-07-03T09:54:18.863284053Z"
@@ -6909,4 +7011,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2026-03-05T08:49:53.148441913Z"
+generated: "2026-03-17T08:45:44.533445071Z"
