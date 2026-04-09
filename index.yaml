@@ -6,6 +6,52 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 2026.4.1
+    created: "2026-04-09T20:19:32.200739894Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: 9d40d3998d994b37e5951a49b2b6ceddb2cd34965aa55db651f577efb05f9b05
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.95.0/home-assistant-14.95.0.tgz
+    version: 14.95.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 2026.3.4
     created: "2026-03-25T20:41:25.862677752Z"
     dependencies:
@@ -5082,6 +5128,30 @@ entries:
     version: 8.0.1
   speech-to-phrase:
   - apiVersion: v2
+    appVersion: 1.4.3
+    created: "2026-04-09T20:19:32.343202379Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Rhasspy's wyoming speech-to-phrase
+    digest: e5594d56d9d54b8ddd91cdf138dc16423020e2c139b06ba006ae7acd4689224f
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/speech-to-phrase
+    keywords:
+    - speech-to-phrase
+    - wyoming
+    - rhasspy
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: speech-to-phrase
+    sources:
+    - https://hub.docker.com/r/rhasspy/wyoming-speech-to-phrase
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/speech-to-phrase-1.3.0/speech-to-phrase-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
     appVersion: 1.4.2
     created: "2026-03-17T08:45:44.532965602Z"
     dependencies:
@@ -6148,6 +6218,32 @@ entries:
     version: 1.0.0
   zigbee2mqtt:
   - apiVersion: v2
+    appVersion: 2.9.2
+    created: "2026-04-09T20:19:32.481390819Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 7d6da079477c16c9f63715ada9b67e88f2b943d7a2561322122fc2694d89e8a2
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.39.0/zigbee2mqtt-9.39.0.tgz
+    version: 9.39.0
+  - apiVersion: v2
     appVersion: 2.9.1
     created: "2026-03-05T08:49:09.68448091Z"
     dependencies:
@@ -7057,4 +7153,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2026-03-25T20:41:25.863105748Z"
+generated: "2026-04-09T20:19:32.48195828Z"
