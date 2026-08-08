@@ -6,6 +6,52 @@ entries:
         - kind: changed
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
+    appVersion: 2026.8.1
+    created: "2026-08-08T20:38:26.402585756Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    - condition: whisper.enabled
+      name: whisper
+      repository: https://andrenarchy.github.io/helm-charts/
+      version: 1.0.0
+    description: Home Assistant
+    digest: 6591d9011f7d36e8fc0b9a634166d9740af1dba1bef92a761a93c5d9a6608242
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/home-assistant-14.101.0/home-assistant-14.101.0.tgz
+    version: 14.101.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
     appVersion: 2026.6.3
     created: "2026-06-14T19:50:38.512771523Z"
     dependencies:
@@ -4694,6 +4740,36 @@ entries:
     version: 14.0.0
   mathesar:
   - apiVersion: v2
+    appVersion: 0.12.0
+    created: "2026-08-08T20:38:26.567153473Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.7.11
+    description: An intuitive spreadsheet-like interface that lets users of all technical
+      skill levels view, edit, query, and collaborate on Postgres data directly
+    digest: c657c263f3e832b1ca846fb7c95cdc6f763ef6da2cb8241db679f9e6f12a06d3
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/mathesar
+    icon: https://avatars.githubusercontent.com/u/64070190
+    keywords:
+    - Mathesar
+    - Postgres
+    - Postgresql
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: mathesar
+    sources:
+    - https://github.com/mathesar-foundation/mathesar
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/mathesar-1.8.0/mathesar-1.8.0.tgz
+    version: 1.8.0
+  - apiVersion: v2
     appVersion: 0.11.0
     created: "2026-06-04T13:21:34.267880938Z"
     dependencies:
@@ -4934,6 +5010,38 @@ entries:
     - https://github.com/andrenarchy/helm-charts/releases/download/mathesar-1.0.0/mathesar-1.0.0.tgz
     version: 1.0.0
   photoprism:
+  - apiVersion: v2
+    appVersion: "260728"
+    created: "2026-08-08T20:38:26.741562841Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 7056a481a03b183c472234f41e663840c859688bfdcadd1868b9b449234e445c
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/photoprism
+    icon: https://demo-cdn.photoprism.app/static/icons/logo.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.15.0/photoprism-8.15.0.tgz
+    version: 8.15.0
   - apiVersion: v2
     appVersion: "260601"
     created: "2026-06-04T13:21:34.515000702Z"
@@ -5548,6 +5656,39 @@ entries:
     - https://github.com/andrenarchy/helm-charts/releases/download/speech-to-phrase-1.0.0/speech-to-phrase-1.0.0.tgz
     version: 1.0.0
   vaultwarden:
+  - apiVersion: v2
+    appVersion: 1.37.1
+    created: "2026-08-08T20:38:26.918597834Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: a16df0a625fc9c882fb2d13ac0de468388af43558abaf495e0011e33037b0cc8
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/vaultwarden
+    icon: https://lab.uberspace.de/_images/vaultwarden.png
+    keywords:
+    - Vaultwarden
+    - Bitwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/vaultwarden-6.26.0/vaultwarden-6.26.0.tgz
+    version: 6.26.0
   - apiVersion: v2
     appVersion: 1.36.0
     created: "2026-05-22T19:51:43.688824691Z"
@@ -6641,6 +6782,32 @@ entries:
     version: 1.0.0
   zigbee2mqtt:
   - apiVersion: v2
+    appVersion: 2.13.0
+    created: "2026-08-08T20:38:27.11492906Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 286330b64e1283b253d7ede1e83770751a460915f73f676ef7a77811fea4b76b
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.43.0/zigbee2mqtt-9.43.0.tgz
+    version: 9.43.0
+  - apiVersion: v2
     appVersion: 2.12.0
     created: "2026-06-14T19:50:38.645727695Z"
     dependencies:
@@ -7654,4 +7821,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2026-06-14T19:50:38.646311464Z"
+generated: "2026-08-08T20:38:27.115609917Z"
