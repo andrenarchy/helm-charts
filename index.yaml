@@ -5195,6 +5195,38 @@ entries:
     version: 1.0.0
   photoprism:
   - apiVersion: v2
+    appVersion: "261029"
+    created: "2026-11-01T20:32:44.742832682Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 359e8fe1d668f97e42f69bfc99a40d31824962b271cd952a1c78e13d57a03e47
+    home: https://github.com/andrenarchy/helm-charts/tree/main/charts/photoprism
+    icon: https://demo-cdn.photoprism.app/static/icons/logo.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andre@gaul.io
+      name: André Gaul
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/andrenarchy/helm-charts/releases/download/photoprism-8.17.0/photoprism-8.17.0.tgz
+    version: 8.17.0
+  - apiVersion: v2
     appVersion: "261007"
     created: "2026-10-26T19:30:48.408350445Z"
     dependencies:
@@ -8214,4 +8246,4 @@ entries:
     urls:
     - https://github.com/andrenarchy/helm-charts/releases/download/zigbee2mqtt-9.4.2/zigbee2mqtt-9.4.2.tgz
     version: 9.4.2
-generated: "2026-11-01T20:29:02.542943363Z"
+generated: "2026-11-01T20:32:44.743206687Z"
